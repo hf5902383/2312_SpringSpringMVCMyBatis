@@ -10,5 +10,8 @@
         <module name="_03Spring" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eg1" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
