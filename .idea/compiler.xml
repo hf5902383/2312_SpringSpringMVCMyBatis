@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="_02maven" />
+        <module name="_04mybaits" />
         <module name="_03Spring" />
       </profile>
     </annotationProcessing>
