@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="_02maven" />
-        <module name="_04mybaits" />
         <module name="_03Spring" />
+        <module name="egmybatis1" />
+        <module name="_04mybaits" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="_04mybaits" target="1.8" />
       <module name="eg1" target="8" />
     </bytecodeTargetLevel>
   </component>

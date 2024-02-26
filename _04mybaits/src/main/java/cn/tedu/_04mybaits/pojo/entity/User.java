@@ -3,7 +3,8 @@ package cn.tedu._04mybaits.pojo.entity;
 import java.util.Date;
 
 /**
- * 和数据库的user表做映射【1对1 ， 1对多。。。】
+ * 和数据库的user表做映射
+ * 数据映射器（Data Mapper）： 数据映射器是一种设计模式，用于将一个对象的数据表示映射到另一个对象的数据表示，通常用于将数据从一种格式映射到另一种格式。在对象关系映射（ORM）中，数据映射器用于将对象模型映射到数据库表结构，或者反之。
  */
 public class User {
     private Long id;
