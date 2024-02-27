@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:名称空间,指定接口的完整路径-->
+<mapper namespace="fanghou.emal.egmybatis2.mapper.ProductMapper">
+    <!--Ctrl + Alt + l 格式化代码-->
+    <insert id="insertProduct">
+        INSERT INTO product(id, title, price, stock)
+        VALUES (#{id}, #{title}, #{price}, #{stock})
+    </insert>
+
+    <select id="selectSingleProduct" resultType="fanghou.emal.egmybatis2.pojo.vo.ProductVo1">
+        SELECT title, price FROM product WHERE id = #{id}
+    </select>
+
+    <delete id="deleteById">
+        DELETE FROM product WHERE id= #{id}
+    </delete>
+
+
+</mapper>

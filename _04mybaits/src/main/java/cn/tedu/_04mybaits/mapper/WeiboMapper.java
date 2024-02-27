@@ -8,22 +8,22 @@ import java.util.List;
 
 @Mapper
 public interface WeiboMapper {
-    @Insert("INSERT INTO weibo(content,created,user_id) VALUES(#{content},#{created},#{userId})")
+    //@Insert("INSERT INTO weibo(content,created,user_id) VALUES(#{content},#{created},#{userId})")
     int insertWeibo(Weibo weibo);
 
-    @Delete("DELETE FROM weibo WHERE id=#{id}")
+    //@Delete("DELETE FROM weibo WHERE id=#{id}")
     int deleteById(Long id);
 
-    @Update("UPDATE weibo SET content=#{content},created=#{created},user_id=#{userId} WHERE id=#{id}")
+    //@Update("UPDATE weibo SET content=#{content},created=#{created},user_id=#{userId} WHERE id=#{id}")
     int updateById(Weibo weibo);
 
-    @Select("SELECT id, content, created, user_id AS userId FROM weibo WHERE id=#{id}")
+    //@Select("SELECT id, content, created, user_id AS userId FROM weibo WHERE id=#{id}")
     Weibo selectById(Long id);
 
-    @Select("SELECT id, content, created, user_id AS userId FROM weibo")
+    //@Select("SELECT id, content, created, user_id AS userId FROM weibo")
     List<Weibo> selectAll();
 
-    @Select("SELECT content, user_id AS userId FROM weibo WHERE id=#{id}")
+    //@Select("SELECT content, user_id AS userId FROM weibo WHERE id=#{id}")
     Weibovo1 selectByWeiboId(Long id);
 
 

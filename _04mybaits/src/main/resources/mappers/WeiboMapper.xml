@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:名称空间,指定接口的完整路径-->
+<mapper namespace="cn.tedu._04mybaits.mapper.WeiboMapper">
+    <!--Ctrl + Alt + l 格式化代码-->
+    <insert id="insertUser">
+        INSERT INTO weibo(content, created, user_id)
+        VALUES (#{content}, #{created}, #{userId})
+    </insert>
+
+    <delete id="deleteById">
+        DELETE
+        FROM weibo
+        WHERE id = #{id}
+    </delete>
+
+    <update id="updateById">
+        UPDATE weibo
+        SET content=#{content},
+            created=#{created},
+            user_id=#{userId}
+        WHERE id = #{id}
+    </update>
+
+    <select id="selectById" resultType="cn.tedu._04mybaits.pojo.entity.Weibo">
+        SELECT id, content, created, user_id AS userId
+        FROM weibo
+        WHERE id = #{id}
+    </select>
+
+    <select id="selectAll" resultType="cn.tedu._04mybaits.pojo.entity.Weibo">
+        SELECT id, content, created, user_id AS userId
+        FROM weibo
+    </select>
+
+    <select id="selectByWeiboId" resultType="cn.tedu._04mybaits.pojo.vo.Weibovo1">
+        SELECT content, user_id AS userId
+        FROM weibo
+        WHERE id = #{id}
+    </select>
+
+
+</mapper>
+

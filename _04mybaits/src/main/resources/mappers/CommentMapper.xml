@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:名称空间,指定接口的完整路径-->
+<mapper namespace="cn.tedu._04mybaits.mapper.CommentMapper">
+    <!--定义重复标签-->
+    <sql id="deleteSql">
+        DELETE FROM comment
+    </sql>
+    <!--Ctrl + Alt + l 格式化代码-->
+    <insert id="insertProduct">
+        INSERT INTO comment (content, created, user_id, weibo_id)
+        VALUES (#{content}, #{created}, #{userId}, #{weiboId})
+    </insert>
+
+    <update id="UpdateById">
+        UPDATE comment
+        SET id=#{id},
+            content=#{content},
+            created=#{created},
+            user_id=#{userId},
+            weibo_id=#{weiboId}
+        WHERE id = #{id}
+    </update>
+
+    <!-- 动态修改-->
+    <update id="dynamicUpdate">
+        UPDATE comment
+        <set>
+            <if test="content!=null">content=#{content},</if>
+            <if test="created!=null">created=#{created},</if>
+            <if test="userId!=null">user_id=#{userId},</if>
+            <if test="weiboId!=null">weibo_id=#{weiboId}</if>
+
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <!-- 动态删除-->
+    <delete id="dynamicDelete">
+        <!--引用deleteSql语法-->
+       <include refid="deleteSql"/> WHERE id IN(
+            <foreach collection="array" item="delete" separator=",">
+                #{delete}
+            </foreach>
+            )
+    </delete>
+
+    <delete id="dynamicDelete1">
+        <include refid="deleteSql"/> WHERE id IN(
+        <foreach collection="list" item="delete" separator=",">
+            #{delete}
+        </foreach>
+        )
+    </delete>
+
+    <!--统计数量-->
+    <select id="selectCount" resultType="int">
+        SELECT count(*) FROM comment;
+    </select>
+
+</mapper>

@@ -12,6 +12,6 @@ public interface UserMapper {
     /**
      * 用户表插入一条数据
      */
-    @Insert("INSERT INTO user(id,username,password,nickname,created) VALUES(#{id},#{username},#{password},#{nickname},#{created})")
+    //@Insert("INSERT INTO user(id,username,password,nickname,created) VALUES(#{id},#{username},#{password},#{nickname},#{created})")
     int insertUser(User user);
 }

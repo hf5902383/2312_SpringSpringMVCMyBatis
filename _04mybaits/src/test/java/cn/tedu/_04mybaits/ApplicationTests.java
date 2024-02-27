@@ -9,6 +9,8 @@ import cn.tedu._04mybaits.pojo.entity.Weibo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.ArrayList;
 import java.util.Date;
 
 @SpringBootTest
@@ -35,7 +37,7 @@ class ApplicationTests {
     @Test
     void insertUserTest(){
         User user = new User();
-        user.setId(105L);
+        user.setId(111L);
         user.setUsername("传奇叔叔");
         user.setPassword("123456");
         user.setNickname("范传奇");
@@ -56,7 +58,7 @@ class ApplicationTests {
 
     @Test
     void deleteByIdTest(){
-        System.out.println(weiboMapper.deleteById(205L));
+        System.out.println(weiboMapper.deleteById(111L));
     }
 
     @Test
@@ -65,7 +67,7 @@ class ApplicationTests {
         weibo.setId(200L);
         weibo.setContent("good good study day day up");
         weibo.setCreated(new Date());
-        weibo.setUserId(102L);
+        weibo.setUserId(110L);
         System.out.println(weiboMapper.updateById(weibo));
     }
 
@@ -120,6 +122,34 @@ class ApplicationTests {
         System.out.println(commentMapper.selectCommentById2(300L));
     }
 
+    @Test
+    void dynamicUpdateTest(){
 
+        Comment comment = new Comment();
+        comment.setId(302L);
+        comment.setCreated(new Date());
+        comment.setContent("good poem");
+        System.out.println(commentMapper.dynamicUpdate(comment));
+    }
+
+    @Test
+    void dynamicDeleteTest(){
+        Long[] delete = {304L,305L};
+        System.out.println(commentMapper.dynamicDelete(delete));
+    }
+
+    @Test
+    void dynamicDeleteTest1(){
+        ArrayList<Long> delete = new ArrayList<>();
+        delete.add(303L);
+        delete.add(304L);
+        delete.add(305L);
+        System.out.println(commentMapper.dynamicDelete1(delete));
+
+    }
+    @Test
+    void selectCount(){
+        System.out.println(commentMapper.selectCount());
+    }
 
 }
