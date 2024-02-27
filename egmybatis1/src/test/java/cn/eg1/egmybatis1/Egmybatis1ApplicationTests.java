@@ -28,7 +28,7 @@ class Egmybatis1ApplicationTests {
 
     @Test
     void selectSingleProductTest(){
-        System.out.println(productMapper.selectSingleProduct(1));
+        System.out.println(productMapper.selectSingleProduct(2));
 
     }
 

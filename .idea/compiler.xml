@@ -13,7 +13,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="_04mybaits" target="1.8" />
       <module name="eg1" target="8" />
     </bytecodeTargetLevel>
   </component>
