@@ -34,8 +34,8 @@
             <if test="orderId!=null">order_id=#{orderId},</if>
             <if test="custId!=null">cust_id=#{custId},</if>
             <if test="orderDate!=null">order_date=#{orderDate},</if>
-            <if test="status!=null">status=#{status}</if>
-            <if test="productsNum!=null">products_num=#{productsNum}</if>
+            <if test="status!=null">status=#{status},</if>
+            <if test="productsNum!=null">products_num=#{productsNum},</if>
             <if test="amt!=null">amt=#{amt}</if>
         </set>
         WHERE order_id=#{orderId}

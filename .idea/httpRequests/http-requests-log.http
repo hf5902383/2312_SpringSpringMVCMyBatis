@@ -1,0 +1,70 @@
+POST http://localhost:8080/v1/carts/updateCart
+Content-Type: application/x-www-form-urlencoded
+
+title=ModelX&price=5000&number=323
+
+<> 2024-02-29T174557.200.txt
+
+###
+
+GET http://localhost:8080/v1/carts/deleteCart?username=ModelY&id=3
+Accept: application/json
+
+<> 2024-02-29T174407.200.json
+
+###
+
+GET http://localhost:8080/v1/carts/deleteCart?title=ModelY&price=300000.00
+Accept: application/json
+
+<> 2024-02-29T174334.200.json
+
+###
+
+GET http://localhost:8080/v1/carts/deleteCart
+Accept: application/json
+
+<> 2024-02-29T174319.200.json
+
+###
+
+POST http://localhost:8080/v1/carts/addCart
+Content-Type: application/x-www-form-urlencoded
+
+title=ModelX&price=888888
+
+<> 2024-02-29T174206.200.txt
+
+###
+
+GET http://localhost:8080/v1/carts/addCart?title=ModelY&price=300000.00
+Accept: application/json
+
+<> 2024-02-29T172846.200.json
+
+###
+
+GET http://bmi
+
+###
+
+GET http://bmi
+
+###
+
+GET http://bmi
+
+###
+
+GET http://bmi
+
+###
+
+GET http://bmi
+
+###
+
+GET http://bmi
+
+###
+

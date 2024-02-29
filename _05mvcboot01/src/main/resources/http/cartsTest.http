@@ -1,0 +1,27 @@
+
+
+###
+
+###更新商品：UPLOAD请求测试
+POST http://localhost:8080/v1/carts/updateCart
+Content-Type: application/x-www-form-urlencoded
+
+title=ModelX&price=5000&number=323
+
+###删除商品：GET请求测试
+GET http://localhost:8080/v1/carts/deleteCart?username=ModelY&id=3
+Accept: application/json
+
+###
+###添加商品 Post请求测试
+POST http://localhost:8080/v1/carts/addCart
+Content-Type: application/x-www-form-urlencoded
+
+title=ModelX&price=888888
+
+###
+###添加商品 GET请求测试
+GET http://localhost:8080/v1/carts/addCart?title=ModelY&price=300000.00
+Accept: application/json
+
+
