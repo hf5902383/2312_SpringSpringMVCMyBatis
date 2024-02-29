@@ -41,6 +41,95 @@
         WHERE id = #{id}
     </select>
 
+    <select id="selectIndex" resultType="cn.tedu._04mybaits.pojo.vo.WeiboIndexVO">
+        SELECT w.id, w.content, u.nickname
+        FROM user u
+                 JOIN weibo w ON u.id = w.user_id
 
+    </select>
+
+    <select id="selectDetailById" resultType="cn.tedu._04mybaits.pojo.vo.WeiboDetailVO">
+        SELECT w.id, w.content, w.created, u.nickname
+        FROM weibo w
+                 JOIN user u ON u.id = w.user_id
+    </select>
+
+    <!--主键id 其他result column：database中查询字段名称 property：java属性名称 -->
+    <resultMap id="aaa" type="cn.tedu._04mybaits.pojo.vo.WeiboMapV01">
+        <id column="id" property="id"/>
+        <result column="content" property="content"/>
+        <result column="user_id" property="userId"/>
+    </resultMap>
+    <select id="selectMap1" resultMap="aaa">
+        SELECT id, content, user_id
+        FROM weibo
+        WHERE id = #{id}
+    </select>
+
+    <resultMap id="bbb" type="cn.tedu._04mybaits.pojo.vo.WeiboMapVo2">
+        <id column="uid" property="id"/>
+        <result column="nickname" property="nickname"/>
+        <collection property="weiboList" ofType="cn.tedu._04mybaits.pojo.entity.Weibo">
+            <id column="wid" property="id"/>
+            <result column="content" property="content"/>
+            <result column="created" property="created"/>
+            <result column="user_id" property="userId"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectMap2" resultMap="bbb">
+        SELECT u.id uid,
+               u.nickname,
+               w.id wid,
+               w.content,
+               w.created,
+               w.user_id
+        FROM user u
+                 JOIN weibo w ON u.id = w.user_id
+        WHERE u.id = #{uid}
+
+    </select>
+
+    <resultMap id="ccc" type="cn.tedu._04mybaits.pojo.vo.WeiboMapVo3">
+        <id column="wid" property="id"/>
+        <result column="wcontent" property="content"/>
+        <collection property="commentList" ofType="cn.tedu._04mybaits.pojo.entity.Comment">
+            <id column="cid" property="id"/>
+            <result column="ccontent" property="content"/>
+            <result column="created" property="created"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectMap3" resultMap="ccc">
+        SELECT w.id wid,
+               w.content wcontent,
+               c.id cid,
+               c.content cconent,
+               c.created
+        FROM weibo w
+                 JOIN comment c ON w.id = c.weibo_id
+        WHERE w.id = #{wid}
+    </select>
+
+    <resultMap id="ddd" type="cn.tedu._04mybaits.pojo.vo.WeiboMapVo4">
+        <id column="wid" property="id"/>
+        <result column="wcontent" property="content"/>
+        <collection property="commentVo4List" ofType="cn.tedu._04mybaits.pojo.entity.Comment">
+            <id column="cid" property="id"/>
+            <result column="ccontent" property="content"/>
+            <result column="created" property="created"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectMap4" resultMap="ddd">
+        SELECT w.id wid,
+               w.content wcontent,
+               c.id cid,
+               c.content cconent,
+               c.created
+        FROM weibo w
+                 JOIN comment c ON w.id = c.weibo_id
+        WHERE w.id = #{wid}
+    </select>
 </mapper>
 

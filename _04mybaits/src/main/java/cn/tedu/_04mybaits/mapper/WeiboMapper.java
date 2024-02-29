@@ -1,7 +1,7 @@
 package cn.tedu._04mybaits.mapper;
 
 import cn.tedu._04mybaits.pojo.entity.Weibo;
-import cn.tedu._04mybaits.pojo.vo.Weibovo1;
+import cn.tedu._04mybaits.pojo.vo.*;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -26,6 +26,17 @@ public interface WeiboMapper {
     //@Select("SELECT content, user_id AS userId FROM weibo WHERE id=#{id}")
     Weibovo1 selectByWeiboId(Long id);
 
+    //多表联查：
+    List<WeiboIndexVO> selectIndex();
 
+    List<WeiboDetailVO> selectDetailById(Long id);
+
+    WeiboMapV01 selectMap1(Long id);
+
+    WeiboMapVo2 selectMap2(Long uid);
+
+    WeiboMapVo3 selectMap3(Long wid);
+
+    WeiboMapVo4 selectMap4(Long wid);
 
 }

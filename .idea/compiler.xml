@@ -11,7 +11,9 @@
         <module name="egmybatis1" />
         <module name="_04mybaits" />
         <module name="egmybatis2" />
+        <module name="_05mvcboot01" />
         <module name="egmybatis3" />
+        <module name="egmybaits4" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -152,4 +152,34 @@ class ApplicationTests {
         System.out.println(commentMapper.selectCount());
     }
 
+    @Test
+    void selectIndexTest(){
+        System.out.println(weiboMapper.selectIndex());
+    }
+
+    @Test
+    void selectDetailByIdTest(){
+        System.out.println(weiboMapper.selectDetailById(200L));
+    }
+
+    @Test
+    void selectMap1Test(){
+        System.out.println(weiboMapper.selectMap1(200L));
+    }
+
+    @Test
+    void selectMap2Test(){
+        System.out.println(weiboMapper.selectMap2(100L));
+    }
+
+    @Test
+    void selectMap3Test(){
+        System.out.println(weiboMapper.selectMap3(200L));
+    }
+
+    @Test
+    void selectMap4Test(){
+        System.out.println(weiboMapper.selectMap4(200L));
+    }
+
 }
