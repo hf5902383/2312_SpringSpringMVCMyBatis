@@ -1,0 +1,22 @@
+POST http://localhost:8080/address/update
+Content-Type: application/x-www-form-urlencoded
+
+id=1&address=北京市幸福快乐大街1号&email=309435365@qq.com
+
+###
+POST http://localhost:8080/address/delete
+Content-Type: application/x-www-form-urlencoded
+
+id=2
+
+###
+GET http://localhost:8080/address/select
+Accept: application/json
+
+###
+POST http://localhost:8080/address/insert
+Content-Type: application/x-www-form-urlencoded
+
+receiver=zxc&address=dfdfd&email=zczczcc&mobile=8978778
+
+###

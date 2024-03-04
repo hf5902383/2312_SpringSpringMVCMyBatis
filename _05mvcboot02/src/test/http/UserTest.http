@@ -1,0 +1,20 @@
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+userName=yyt&passWord=44321&id=3
+
+###
+GET http://localhost:8080/v1/users/userDelete?id=1
+Accept: application/json
+
+###
+GET http://localhost:8080/v1/users/userList
+Accept: application/json
+
+###
+POST http://localhost:8080/v1/users/insert
+Content-Type: application/x-www-form-urlencoded
+
+userName=fang&passWord=11234&nickName=Fang
+
+###

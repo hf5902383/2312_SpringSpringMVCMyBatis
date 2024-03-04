@@ -1,70 +1,428 @@
-POST http://localhost:8080/v1/carts/updateCart
+POST http://localhost:8080/address/update
 Content-Type: application/x-www-form-urlencoded
 
-title=ModelX&price=5000&number=323
+id=1&address=北京市幸福快乐大街1号&email=309435365@qq.com
 
-<> 2024-02-29T174557.200.txt
-
-###
-
-GET http://localhost:8080/v1/carts/deleteCart?username=ModelY&id=3
-Accept: application/json
-
-<> 2024-02-29T174407.200.json
+<> 2024-03-03T222639.200.txt
 
 ###
 
-GET http://localhost:8080/v1/carts/deleteCart?title=ModelY&price=300000.00
-Accept: application/json
-
-<> 2024-02-29T174334.200.json
-
-###
-
-GET http://localhost:8080/v1/carts/deleteCart
-Accept: application/json
-
-<> 2024-02-29T174319.200.json
-
-###
-
-POST http://localhost:8080/v1/carts/addCart
+POST http://localhost:8080/address/update
 Content-Type: application/x-www-form-urlencoded
 
-title=ModelX&price=888888
+id=1&address=北京市幸福快乐大街1号&email=309435365@qq.com
 
-<> 2024-02-29T174206.200.txt
+<> 2024-03-03T222614.500.json
 
 ###
 
-GET http://localhost:8080/v1/carts/addCart?title=ModelY&price=300000.00
+POST http://localhost:8080/address/update
+Content-Type: application/x-www-form-urlencoded
+
+id=1&address=北京市幸福快乐大街1号&email=309435365@qq.com
+
+<> 2024-03-03T222603.500.json
+
+###
+
+POST http://localhost:8080/address/update
+Content-Type: application/x-www-form-urlencoded
+
+id=1&address=北京市幸福快乐大街1号&email=309435365@qq.com
+
+<> 2024-03-03T222438.500.json
+
+###
+
+POST http://localhost:8080/address/delete
+Content-Type: application/x-www-form-urlencoded
+
+id=2
+
+<> 2024-03-03T222433.200.txt
+
+###
+
+POST http://localhost:8080/address/insert
+Content-Type: application/x-www-form-urlencoded
+
+receiver=zxc&address=dfdfd&email=zczczcc&mobile=8978778
+
+<> 2024-03-03T222420.200.txt
+
+###
+
+POST http://localhost:8080/address/update
+Content-Type: application/x-www-form-urlencoded
+
+id=1&address=北京市幸福快乐大街1号&email=309435365@qq.com
+
+<> 2024-03-03T221938.500.json
+
+###
+
+POST http://localhost:8080/address/update
+Content-Type: application/x-www-form-urlencoded
+
+id=1&address=北京市幸福快乐大街1号&email=309435365@qq.com
+
+<> 2024-03-03T221835.500.json
+
+###
+
+GET http://localhost:8080/address/select
 Accept: application/json
 
-<> 2024-02-29T172846.200.json
+<> 2024-03-03T220655.200.json
 
 ###
 
-GET http://bmi
+GET http://localhost:8080/address/select
+Accept: application/json
+
+<> 2024-03-03T220607.200.json
 
 ###
 
-GET http://bmi
+GET http://localhost:8080/address/select
+Accept: application/json
+
+<> 2024-03-03T220444.200.json
 
 ###
 
-GET http://bmi
+GET http://localhost:8080/address/select
+Accept: application/json
+
+<> 2024-03-03T220341.200.json
 
 ###
 
-GET http://bmi
+GET http://localhost:8080/address/select
+Accept: application/json
+
+<> 2024-03-03T220140.200.json
 
 ###
 
-GET http://bmi
+GET http://localhost:8080/address/select
+Accept: application/json
+
+<> 2024-03-03T220036.404.json
 
 ###
 
-GET http://bmi
+POST http://localhost:8080/address/insert
+Content-Type: application/x-www-form-urlencoded
+
+receiver=ada&address=dfdfd&email=zczczcc&mobile=897
+
+<> 2024-03-01T172456.200.txt
+
+###
+
+POST http://localhost:8080/address/insert
+Content-Type: application/x-www-form-urlencoded
+
+receiver=ada&address=dfdfd&email=zczczcc&mobile=897
+
+<> 2024-03-01T172154.500.json
+
+###
+
+POST http://localhost:8080/address/insert
+Content-Type: application/x-www-form-urlencoded
+
+receiver=ada&address=dfdfd&email=zczczcc&mobile=897
+
+<> 2024-03-01T172059.500.json
+
+###
+
+POST http://localhost:8080/address/insert
+Content-Type: application/x-www-form-urlencoded
+
+receiver=ada&address=dfdfd&email=zczczcc&mobile=897
+
+<> 2024-03-01T171654.500.json
+
+###
+
+POST http://localhost:8080/address/insert
+Content-Type: application/x-www-form-urlencoded
+
+receiver=ada&address=dfdfd&email=zczczcc&mobile=897
+
+<> 2024-03-01T171525.500.json
+
+###
+
+POST http://localhost:8080/address/insert
+Content-Type: application/x-www-form-urlencoded
+
+receiver=ada&address=dfdfd&email=zczczcc&mobile=adadad
+
+<> 2024-03-01T171449.500.json
+
+###
+
+POST http://localhost:8080/address/insert
+Content-Type: application/x-www-form-urlencoded
+
+receiver=ada&address=dfdfd&email=zczczcc&mobile=adadad
+
+<> 2024-03-01T171444.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+userName=yyt&passWord=44321&id=3
+
+<> 2024-03-01T145437.200.txt
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+userName=yyt&passWord=44321&id=3
+
+<> 2024-03-01T145206.200.txt
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+userName=yyt&passWord=44321&id=3
+
+<> 2024-03-01T144546.200.txt
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+userName=yyt&passWord=44321&id=3
+
+<> 2024-03-01T144026.200.txt
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+userName=yyt&passWord=44321&id=2
+
+<> 2024-03-01T143013.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+userName=yyt&passWord=44321&id=2
+
+<> 2024-03-01T143008.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+userName=yyt&passWord=44321&id=2
+
+<> 2024-03-01T142918.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+userName=yyt&passWord=44321&id=2
+
+<> 2024-03-01T142732.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&id=2
+
+<> 2024-03-01T142500.500.json
+
+###
+
+POST http://localhost:8080/v1/users/insert
+Content-Type: application/x-www-form-urlencoded
+
+userName=fang&passWord=11234&nickName=Fang
+
+<> 2024-03-01T142455.200.txt
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&id=2
+
+<> 2024-03-01T142451.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&id=2
+
+<> 2024-03-01T142445.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&id=2
+
+<> 2024-03-01T142212.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&id=2
+
+<> 2024-03-01T142144.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&nickname=yytaa&id=2
+
+<> 2024-03-01T142056.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&nickname=yytaa&id=2
+
+<> 2024-03-01T142042.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&nickname=yytaa&id=2
+
+<> 2024-03-01T141922.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&nickname=yytaa&id=2
+
+<> 2024-03-01T141853.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&nickname=yytaa&id=2
+
+<> 2024-03-01T141848.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&nickname=yytaa&id=2
+
+<> 2024-03-01T141739.500.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&nickname=yytaa&created=10242&id=2
+
+<> 2024-03-01T141608.400.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&nickname=yytaa&created=10242
+
+<> 2024-03-01T141504.400.json
+
+###
+
+POST http://localhost:8080/v1/users/userUpdate
+Content-Type: application/x-www-form-urlencoded
+
+username=yyt&password=44321&nickname=yytaa&created=10242
+
+<> 2024-03-01T141455.400.json
+
+###
+
+GET http://localhost:8080/v1/users/userDelete?id=1
+Accept: application/json
+
+<> 2024-03-01T114910.200.json
+
+###
+
+GET http://localhost:8080/v1/users/userDelete?id=1
+Accept: application/json
+
+<> 2024-03-01T114845.404.json
+
+###
+
+GET http://localhost:8080/v1/users/userDelete?id=1
+Accept: application/json
+
+<> 2024-03-01T114835.404.json
+
+###
+
+GET http://localhost:8080/v1/users/userDelete?id=1
+Accept: application/json
+
+<> 2024-03-01T114437.404.json
+
+###
+
+GET http://localhost:8080/v1/users/userList
+Accept: application/json
+
+<> 2024-03-01T112353.200.json
+
+###
+
+POST http://localhost:8080/v1/users/insert
+Content-Type: application/x-www-form-urlencoded
+
+userName=fang&passWord=11234&nickName=Fang
+
+<> 2024-03-01T104256.200.txt
 
 ###
 

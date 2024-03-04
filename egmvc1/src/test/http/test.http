@@ -1,0 +1,22 @@
+POST http://localhost:8080//v1/users/update
+Content-Type: application/x-www-form-urlencoded
+
+username=qqqq&password=wwwww21&nickname=zhang&userId=2
+
+###
+GET http://localhost:8080//v1/users/delete?userid=1
+Accept: application/json
+
+###
+POST http://localhost:8080/v1/users/insert
+Content-Type: application/x-www-form-urlencoded
+
+username=adad&password=zdeq12&nickname=asdz
+
+###
+
+
+GET http://localhost:8080//v1/users/userList
+Accept: application/json
+
+###

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu._05mvcboot02.mapper.UserMapper">
+    <insert id="insertUser">
+        INSERT INTO mvcdb.user(username, password, nickname, created)
+        VALUES (#{userName}, #{passWord}, #{nickName}, #{created})
+    </insert>
+
+    <select id="selectUser" resultType="cn.tedu._05mvcboot02.pojo.vo.UserListVo1">
+        SELECT *
+        FROM mvcdb.user
+    </select>
+
+    <delete id="deleteUser">
+        DELETE
+        FROM mvcdb.user
+        WHERE id = #{id}
+    </delete>
+
+    <update id="userUpdate">
+        UPDATE mvcdb.user
+        <set>
+            <if test="id!=null">id=#{id},</if>
+            <if test="userName!=null">username=#{userName},</if>
+            <if test="passWord!=null">password=#{passWord},</if>
+            <if test="nickName!=null">nickname=#{nickName},</if>
+            <if test="created!=null">created=#{created}</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+</mapper>

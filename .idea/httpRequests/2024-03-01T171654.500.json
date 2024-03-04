@@ -1,0 +1,6 @@
+{
+  "timestamp": "2024-03-01T09:16:53.982+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/address/insert"
+}
