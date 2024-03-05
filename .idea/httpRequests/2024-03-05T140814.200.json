@@ -1,0 +1,37 @@
+[
+  {
+    "nickname": "lucy",
+    "content": "lucy的第1条微博",
+    "id": 200
+  },
+  {
+    "nickname": "lucy",
+    "content": "lucy的第2条微博",
+    "id": 201
+  },
+  {
+    "nickname": "tom",
+    "content": "tom的第1条微博",
+    "id": 202
+  },
+  {
+    "nickname": "tom",
+    "content": "tom的第2条微博",
+    "id": 203
+  },
+  {
+    "nickname": "tom",
+    "content": "tom的第3条微博",
+    "id": 204
+  },
+  {
+    "nickname": "赵小刀",
+    "content": "加油学习吧少年",
+    "id": 205
+  },
+  {
+    "nickname": "赵小刀",
+    "content": "我正在学习",
+    "id": 206
+  }
+]

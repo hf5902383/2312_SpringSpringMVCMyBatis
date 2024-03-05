@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fanghou.email._05WEIBO.mapper.WeiboMapper">
+    <insert id="insertWeibo">
+        INSERT INTO blog.weibo (content, created, user_id)
+        VALUES (#{content}, #{created}, #{userId})
+    </insert>
+
+    <select id="selectWeiboIndex" resultType="fanghou.email._05WEIBO.pojo.vo.WeiboIndexVo">
+        SELECT w.id,
+               w.content,
+               u.nickname
+        FROM user u
+                 JOIN weibo w on u.id = w.user_id
+    </select>
+
+    <select id="selectWeiboDetail" resultType="fanghou.email._05WEIBO.pojo.vo.WeiboDetailVo">
+        SELECT weibo.content, weibo.created, weibo.id, user.nickname
+        FROM weibo
+                 JOIN user ON user.id = weibo.user_id
+        WHERE weibo.id = #{id}
+    </select>
+</mapper>

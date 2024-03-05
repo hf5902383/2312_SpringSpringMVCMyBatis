@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fanghou.email._05WEIBO.mapper.CommentMapper">
+    <insert id="insertComment">
+        INSERT INTO blog.comment (content, created, user_id, weibo_id)
+        VALUES (#{content}, #{created}, #{userId}, #{weiboId})
+    </insert>
+
+    <select id="selectComment" resultType="fanghou.email._05WEIBO.pojo.vo.CommentVo">
+        SELECT c.content, c.created, c.id, u.nickname
+        FROM comment c
+                 JOIN user u ON u.id = c.user_id
+        WHERE c.weibo_id = #{id}
+    </select>
+
+</mapper>

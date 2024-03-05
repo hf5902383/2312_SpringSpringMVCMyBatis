@@ -1,6 +1,0 @@
-{
-  "timestamp": "2024-03-01T06:24:50.896+00:00",
-  "status": 500,
-  "error": "Internal Server Error",
-  "path": "/v1/users/userUpdate"
-}

@@ -1,3 +1,11 @@
+GET http://localhost:8080/v1/users/2
+Accept: application/json
+
+###
+GET http://localhost:8080/v1/users/insert?userName=fang&passWord=11234&nickName=Fang
+Accept: application/json
+
+###
 POST http://localhost:8080/v1/users/userUpdate
 Content-Type: application/x-www-form-urlencoded
 

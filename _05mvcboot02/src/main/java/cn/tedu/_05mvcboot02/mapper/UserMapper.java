@@ -23,5 +23,7 @@ public interface UserMapper {
 
     int userUpdate(User user);
 
+    User userSelectByid(Integer uid);
+
 
 }

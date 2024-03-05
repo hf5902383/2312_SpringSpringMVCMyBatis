@@ -30,4 +30,10 @@
         </set>
         WHERE id = #{id}
     </update>
+
+    <select id="userSelectByid" resultType="cn.tedu._05mvcboot02.pojo.entity.User">
+        SELECT id, username, password, nickname, created
+        FROM mvcdb.user
+        WHERE id = #{uid}
+    </select>
 </mapper>

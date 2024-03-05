@@ -1,0 +1,26 @@
+[
+  {
+    "content": "lucy对第2条微博的评论",
+    "created": "2008-01-01 00:00:00",
+    "id": 302,
+    "nickname": "lucy"
+  },
+  {
+    "content": "tom对第2条微博的评论",
+    "created": "2008-01-01 00:00:00",
+    "id": 303,
+    "nickname": "tom"
+  },
+  {
+    "content": "jim对第2条微博的评论",
+    "created": "2008-01-01 00:00:00",
+    "id": 304,
+    "nickname": "jim"
+  },
+  {
+    "content": "lalalal",
+    "created": "2024-03-05 11:20:42",
+    "id": 306,
+    "nickname": "赵小刀"
+  }
+]

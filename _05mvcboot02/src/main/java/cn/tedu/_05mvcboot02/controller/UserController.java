@@ -7,9 +7,7 @@ import cn.tedu._05mvcboot02.pojo.vo.UserListVo1;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 import java.util.List;
@@ -26,7 +24,8 @@ public class UserController {
     @Autowired
     private UserMapper userMapper;
 
-    @RequestMapping(value = "/insert")
+    //@RequestMapping(value = "/insert",method = RequestMethod.POST)
+    @PostMapping("insert")
     public String addUser(AddUserDTO addUserDTO){
         //soutp
         System.out.println("addUserDTO = " + addUserDTO);
@@ -44,8 +43,8 @@ public class UserController {
     /**
      * 查询所有的用户密码
      */
-    @RequestMapping("userList")
-
+    //@RequestMapping("userList")
+    @GetMapping("userList")
     public List<UserListVo1> userList(){
 
         return userMapper.selectUser();
@@ -61,6 +60,13 @@ public class UserController {
     public String userUpdate(User user){
         userMapper.userUpdate(user);
         return "update Success";
+    }
+
+    //查询指定用户信息：【路径传递数据】
+
+    @GetMapping("{uid}")
+    public User selectByUid(@PathVariable Integer uid){
+        return userMapper.userSelectByid(uid);
     }
 
 }
