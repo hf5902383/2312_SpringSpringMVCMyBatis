@@ -18,6 +18,10 @@
         <option value="$PROJECT_DIR$/_04MVC-WEIBO/pom.xml" />
         <option value="$PROJECT_DIR$/egmvc3/pom.xml" />
         <option value="$PROJECT_DIR$/_05WEIBO/pom.xml" />
+        <option value="$PROJECT_DIR$/egweibo2/pom.xml" />
+        <option value="$PROJECT_DIR$/_06interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/_05WEIBOTEST/pom.xml" />
+        <option value="$PROJECT_DIR$/_07springAOP/pom.xml" />
       </list>
     </option>
   </component>

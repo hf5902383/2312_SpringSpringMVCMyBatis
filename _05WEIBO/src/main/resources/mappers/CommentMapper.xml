@@ -9,9 +9,12 @@
     </insert>
 
     <select id="selectComment" resultType="fanghou.email._05WEIBO.pojo.vo.CommentVo">
-        SELECT c.content, c.created, c.id, u.nickname
-        FROM comment c
-                 JOIN user u ON u.id = c.user_id
+        SELECT c.id,
+               c.content,
+               c.created,
+               u.nickname
+        FROM user u
+                 JOIN comment c on u.id = c.user_id
         WHERE c.weibo_id = #{id}
     </select>
 

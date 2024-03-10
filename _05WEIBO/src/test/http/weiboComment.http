@@ -1,4 +1,4 @@
-GET http://localhost:8080/v1/comment/selectByWeiboId?id=201
+GET http://localhost:8080/v1/comment/selectByweiboId?id=201
 Accept: application/json
 
 ###

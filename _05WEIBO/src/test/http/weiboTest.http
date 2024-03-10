@@ -2,7 +2,7 @@ GET http://localhost:8080/v1/weibo/selectById?id=205
 Accept: application/json
 
 ###
-GET http://localhost:8080/v1/weibo/selectIndex
+GET http://localhost:8080/v1/weibo/selectIndex?id=201
 Accept: application/json
 
 ###
@@ -10,7 +10,7 @@ POST http://localhost:8080/v1/weibo/insert
 Content-Type: application/json
 
 {
-"content": "我正在学习"
+"content": "你好"
 }
 
 

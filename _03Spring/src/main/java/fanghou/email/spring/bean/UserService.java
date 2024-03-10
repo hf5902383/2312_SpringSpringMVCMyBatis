@@ -7,9 +7,8 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
     /*
-        1。@Autowired注解： 注入对象/接口的数据
+        1。@Autowired注解： 构造器注入 Spring 将负责自动注入所需的依赖项
      */
-
     @Autowired
     private UserDao userDao;
 

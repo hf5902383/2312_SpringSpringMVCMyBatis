@@ -14,5 +14,5 @@ public interface WeiboMapper {
 
     List<WeiboIndexVo> selectWeiboIndex();
 
-    List<WeiboDetailVo> selectWeiboDetail(Long id);
+    WeiboDetailVo selectWeiboDetail(Long id);
 }

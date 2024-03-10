@@ -17,9 +17,12 @@
     </select>
 
     <select id="selectWeiboDetail" resultType="fanghou.email._05WEIBO.pojo.vo.WeiboDetailVo">
-        SELECT weibo.content, weibo.created, weibo.id, user.nickname
-        FROM weibo
-                 JOIN user ON user.id = weibo.user_id
-        WHERE weibo.id = #{id}
+        SELECT w.id,
+               w.content,
+               w.created,
+               u.nickname
+        FROM user u
+                 JOIN weibo w on u.id = w.user_id
+        WHERE w.id = #{id}
     </select>
 </mapper>

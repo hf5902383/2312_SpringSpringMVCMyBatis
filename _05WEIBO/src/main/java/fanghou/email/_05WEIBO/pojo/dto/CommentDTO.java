@@ -1,30 +1,17 @@
 package fanghou.email._05WEIBO.pojo.dto;
 
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.experimental.FieldDefaults;
+
+@Data
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class CommentDTO {
-    private String content;
-    private Long weiboId;
+    @ApiModelProperty(value = "评论内容",required = true,example = "good day")
+    String content;
+    @ApiModelProperty(value = "微博id", required = true)
+    Long weiboId;
 
-    public String getContent() {
-        return content;
-    }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public Long getWeiboId() {
-        return weiboId;
-    }
-
-    public void setWeiboId(Long weiboId) {
-        this.weiboId = weiboId;
-    }
-
-    @Override
-    public String toString() {
-        return "CommentDTO{" +
-                "content='" + content + '\'' +
-                ", weiboId=" + weiboId +
-                '}';
-    }
 }

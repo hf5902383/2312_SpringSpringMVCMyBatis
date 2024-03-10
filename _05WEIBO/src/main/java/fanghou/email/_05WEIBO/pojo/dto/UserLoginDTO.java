@@ -1,30 +1,18 @@
 package fanghou.email._05WEIBO.pojo.dto;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AccessLevel;
+import lombok.Data;
+import lombok.experimental.FieldDefaults;
+
+@Data
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class UserLoginDTO {
-    private String username;
-    private String password;
+    @ApiModelProperty(value = "用户名",required = true,example = "不可以有特殊符号")
+     String username;
+    @ApiModelProperty(value = "密码",required = true,example = "cannot empty")
+     String password;
 
-    public String getUsername() {
-        return username;
-    }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "UserLoginDTO{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
 }

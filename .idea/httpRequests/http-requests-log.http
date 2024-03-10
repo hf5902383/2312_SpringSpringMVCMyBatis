@@ -1,3 +1,130 @@
+POST http://localhost:8080/v1/user/reg
+Content-Type: application/json
+
+{
+  "username": "ada",
+  "password": "dd",
+  "nickname": "test"
+}
+
+<> 2024-03-05T225956.200.json
+
+###
+
+POST http://localhost:8080/v1/user/reg
+Content-Type: application/json
+
+{
+  "username": "ada",
+  "password": "dd",
+  "nickname": "test"
+}
+
+<> 2024-03-05T225659.200.json
+
+###
+
+POST http://localhost:8080/v1/user/reg
+Content-Type: application/json
+
+{
+  "username": "ada",
+  "password": "dd",
+  "nickname": "test"
+}
+
+<> 2024-03-05T225516.200.json
+
+###
+
+POST http://localhost:8080/v1/user/reg
+Content-Type: application/json
+
+{
+  "username": "ada",
+  "password": "dd",
+  "nickname": "test"
+}
+
+<> 2024-03-05T225051.200.json
+
+###
+
+POST http://localhost:8080/v1/users/login
+Content-Type: application/json
+
+{
+  "username": "Rich",
+  "password": "1231231"
+}
+
+<> 2024-03-05T163035.200.json
+
+###
+
+POST http://localhost:8080/v1/comment/insert
+Content-Type: application/json
+
+{
+  "content": "lalalal",
+  "weiboId": "201"
+}
+
+<> 2024-03-05T154845.200.json
+
+###
+
+POST http://localhost:8080/v1/weibo/insert
+Content-Type: application/json
+
+{
+"content": "你好"
+}
+
+<> 2024-03-05T145901.200.json
+
+###
+
+GET http://localhost:8080/v1/weibo/selectIndex?id=201
+Accept: application/json
+
+<> 2024-03-05T145838.200.json
+
+###
+
+GET http://localhost:8080/v1/weibo/selectIndex
+Accept: application/json
+
+<> 2024-03-05T145815.200.json
+
+###
+
+GET http://localhost:8080/v1/comment/selectByweiboId?id=201
+Accept: application/json
+
+<> 2024-03-05T145738.200.json
+
+###
+
+GET http://localhost:8080/v1/comment/selectByWeiboId?id=201
+Accept: application/json
+
+<> 2024-03-05T145727.404.json
+
+###
+
+GET http://localhost:8080/v1/weibo/selectById?id=205
+Accept: application/json
+
+<> 2024-03-05T143348.200.json
+
+###
+
+GET http://localhost:8080/v1/users/currentUser
+Accept: application/json
+
+###
+
 GET http://localhost:8080/v1/weibo/selectIndex
 Accept: application/json
 
@@ -328,105 +455,6 @@ Content-Type: application/json
 }
 
 <> 2024-03-05T093832.200.json
-
-###
-
-POST http://localhost:8080/v1/weibo/insert
-Content-Type: application/x-www-form-urlencoded
-content=#{content}:
-
-<> 2024-03-05T084944.400.html
-
-###
-
-POST http://localhost:8080/v1/weibo/insert
-Content-Type: application/x-www-form-urlencoded
-content=#{content}:
-
-<> 2024-03-05T084930.400.html
-
-###
-
-POST http://localhost:8080/v1/weibo/insert
-Content-Type: application/x-www-form-urlencoded
-content=#{content}:
-
-###
-
-GET http://localhost:8080/v1/users/currentUser
-Accept: application/json
-
-###
-
-GET http://localhost:8080/v1/users/currentUser
-Accept: application/json
-
-###
-
-GET http://localhost:8080/v1/users/logout
-Accept: application/json
-
-###
-
-GET http://localhost:8080/v1/users/currentUser
-Accept: application/json
-
-<> 2024-03-04T174615.200.json
-
-###
-
-POST http://localhost:8080/v1/users/login
-Content-Type: application/json
-
-{
-  "username": "Rich",
-  "password": "1231231"
-}
-
-<> 2024-03-04T174611.200.json
-
-###
-
-GET http://localhost:8080/v1/users/currentUser
-Accept: application/json
-
-<> 2024-03-04T173904.200.json
-
-###
-
-GET http://localhost:8080/v1/users/currentUser
-Accept: application/json
-
-<> 2024-03-04T173820.200.json
-
-###
-
-POST http://localhost:8080/v1/users/login
-Content-Type: application/json
-
-{
-  "username": "Rich",
-  "password": "1231231"
-}
-
-<> 2024-03-04T173817.200.json
-
-###
-
-GET http://localhost:8080/v1/users/currentUser
-Accept: application/json
-
-###
-
-POST http://localhost:8080/v1/users/login
-Content-Type: application/json
-
-{
-  "username": "Rich",
-  "password": "1231231"
-}
-
-<> 2024-03-04T155850.200.json
 
 ###
 

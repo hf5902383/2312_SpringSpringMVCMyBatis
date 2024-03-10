@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,6 +10,10 @@
         <module name="egmvc1" />
         <module name="egmvc2" />
         <module name="egmvc3" />
+        <module name="egweibo2" />
+        <module name="_06interceptor" />
+        <module name="_07springAOP" />
+        <module name="_05WEIBOTEST" />
         <module name="_05mvcboot01" />
         <module name="egmybaits4" />
         <module name="_05mvcboot02" />
